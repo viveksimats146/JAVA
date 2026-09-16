@@ -1,0 +1,32 @@
+import java.util.*;
+
+class Q4 {
+    static void permute(char[] a, int l) {
+        if (l == a.length) {
+            System.out.println(new String(a));
+            return;
+        }
+
+        for (int i = l; i < a.length; i++) {
+            if (i != l && a[i] == a[l]) continue;
+
+            char t = a[l];
+            a[l] = a[i];
+            a[i] = t;
+
+            permute(a, l + 1);
+
+            t = a[l];
+            a[l] = a[i];
+            a[i] = t;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] a = sc.next().toCharArray();
+
+        Arrays.sort(a);
+        permute(a, 0);
+    }
+}
