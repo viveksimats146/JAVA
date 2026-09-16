@@ -1,0 +1,12 @@
+import java.util.*;
+class Q13 {
+ public static void main(String[] a) {
+  Scanner s=new Scanner(System.in);
+  String x=s.nextLine();
+  char c=s.next().charAt(0);
+  boolean found=false;
+  for(int i=0;i<x.length();i++)
+   if(x.charAt(i)==c){System.out.println("Index="+i);found=true;break;}
+  if(!found)System.out.println("Not Found");
+ }
+}
