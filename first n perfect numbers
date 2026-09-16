@@ -1,0 +1,15 @@
+import java.util.*;
+class Q43 {
+ static boolean perfect(int n){
+  int sum=0;
+  for(int i=1;i<n;i++)if(n%i==0)sum+=i;
+  return sum==n;
+ }
+ public static void main(String[] a){
+  int n=new Scanner(System.in).nextInt(),c=0,x=1;
+  while(c<n){
+   if(perfect(x)){System.out.print(x+" ");c++;}
+   x++;
+  }
+ }
+}
