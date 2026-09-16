@@ -1,0 +1,9 @@
+import java.util.*;
+class Q19 {
+ public static void main(String[] a) {
+  Scanner s=new Scanner(System.in);
+  int m=s.nextInt(),n=s.nextInt();
+  for(int i=1;i<=n;i++)
+   System.out.println(m+" x "+i+" = "+m*i);
+ }
+}
