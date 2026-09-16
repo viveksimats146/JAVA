@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Q2 {
+    static String name, type;
+    static int acc;
+    static double bal = 500;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Name: ");
+        name = sc.nextLine();
+        System.out.print("Account No: ");
+        acc = sc.nextInt();
+        System.out.print("Type: ");
+        type = sc.next();
+
+        System.out.print("Deposit: ");
+        bal += sc.nextDouble();
+
+        System.out.print("Withdraw: ");
+        double w = sc.nextDouble();
+
+        if (bal - w >= 500)
+            bal -= w;
+        else
+            System.out.println("Minimum balance required!");
+
+        System.out.println("Balance = " + bal);
+    }
+}
