@@ -1,0 +1,8 @@
+import java.util.*;
+class Q47 {
+ public static void main(String[] a) {
+  int n=new Scanner(System.in).nextInt();
+  System.out.println("Binary="+Integer.toBinaryString(n));
+  System.out.println("Octal="+Integer.toOctalString(n));
+ }
+}
