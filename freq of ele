@@ -1,0 +1,17 @@
+import java.util.*;
+class Q7 {
+ public static void main(String[] a) {
+  Scanner s=new Scanner(System.in);
+  int n=s.nextInt(); int[] x=new int[n];
+  for(int i=0;i<n;i++)x[i]=s.nextInt();
+  for(int i=0;i<n;i++){
+   boolean b=false;
+   for(int k=0;k<i;k++)if(x[k]==x[i])b=true;
+   if(!b){
+    int c=0;
+    for(int j=0;j<n;j++)if(x[i]==x[j])c++;
+    System.out.println(x[i]+" = "+c);
+   }
+  }
+ }
+}
