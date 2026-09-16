@@ -1,0 +1,12 @@
+import java.util.*;
+class Q24 {
+ public static void main(String[] a) {
+  Scanner s=new Scanner(System.in);
+  int n=s.nextInt();String[] x=new String[n];
+  for(int i=0;i<n;i++)x[i]=s.next();
+  Arrays.sort(x);
+  int ch=s.nextInt(); // 1=Ascending, 2=Descending
+  if(ch==2)for(int i=n-1;i>=0;i--)System.out.println(x[i]);
+  else for(String z:x)System.out.println(z);
+ }
+}
