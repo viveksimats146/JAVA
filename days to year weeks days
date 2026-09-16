@@ -1,0 +1,13 @@
+import java.util.*;
+
+class Q1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int d = sc.nextInt();
+
+        System.out.println("Years: " + d / 365);
+        d %= 365;
+        System.out.println("Weeks: " + d / 7);
+        System.out.println("Days: " + d % 7);
+    }
+}
