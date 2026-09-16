@@ -1,0 +1,9 @@
+import java.util.*;
+class Q21 {
+ public static void main(String[] a) {
+  int n=new Scanner(System.in).nextInt();
+  int r=(int)Math.sqrt(n);
+  if(r*r==n)System.out.println(r+" "+(-r));
+  else System.out.println("Not Perfect Square");
+ }
+}
