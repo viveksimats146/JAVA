@@ -1,0 +1,12 @@
+import java.util.*;
+class Q17 {
+ public static void main(String[] a) {
+  int n=new Scanner(System.in).nextInt();
+  while(n>=10){
+   int sum=0;
+   while(n>0){sum+=n%10;n/=10;}
+   n=sum;
+  }
+  System.out.println(n);
+ }
+}
