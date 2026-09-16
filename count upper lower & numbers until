@@ -1,0 +1,15 @@
+import java.util.*;
+class Q32 {
+ public static void main(String[] a) {
+  Scanner s=new Scanner(System.in);
+  int u=0,l=0,n=0;
+  while(true){
+   char c=s.next().charAt(0);
+   if(c=='*')break;
+   if(Character.isUpperCase(c))u++;
+   else if(Character.isLowerCase(c))l++;
+   else if(Character.isDigit(c))n++;
+  }
+  System.out.println("Upper="+u+" Lower="+l+" Numbers="+n);
+ }
+}
