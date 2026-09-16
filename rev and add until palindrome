@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Q7 {
+    static long reverse(long n) {
+        long r = 0;
+        while (n > 0) {
+            r = r * 10 + n % 10;
+            n /= 10;
+        }
+        return r;
+    }
+
+    static boolean palindrome(long n) {
+        return n == reverse(n);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+
+        while (!palindrome(n)) {
+            n = n + reverse(n);
+            System.out.println(n);
+        }
+    }
+}
