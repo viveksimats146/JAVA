@@ -1,0 +1,10 @@
+import java.util.*;
+class Q23 {
+ public static void main(String[] a) {
+  int n=new Scanner(System.in).nextInt(),x=n,sum=0;
+  while(x>0){
+   int d=x%10;sum+=d*d*d;x/=10;
+  }
+  System.out.println(sum==n?"Armstrong":"Not Armstrong");
+ }
+}
