@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Q5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int total = sc.nextInt();
+        int staff = sc.nextInt();
+
+        int nonTeaching = staff / 3;
+        int students = total - staff - nonTeaching;
+
+        System.out.println("Student Users: " + students);
+    }
+}
