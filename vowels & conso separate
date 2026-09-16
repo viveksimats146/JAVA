@@ -1,0 +1,12 @@
+import java.util.*;
+class Q15 {
+ public static void main(String[] a) {
+  String s=new Scanner(System.in).next();
+  System.out.print("Vowels: ");
+  for(char c:s.toCharArray())
+   if("aeiouAEIOU".indexOf(c)>=0)System.out.print(c+" ");
+  System.out.print("\nConsonants: ");
+  for(char c:s.toCharArray())
+   if(Character.isLetter(c)&&"aeiouAEIOU".indexOf(c)<0)System.out.print(c+" ");
+ }
+}
