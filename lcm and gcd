@@ -1,0 +1,18 @@
+import java.util.*;
+class Q28 {
+ static int gcd(int a,int b){
+  while(b!=0){int t=a%b;a=b;b=t;}
+  return a;
+ }
+ public static void main(String[] a){
+  Scanner s=new Scanner(System.in);
+  int n=s.nextInt(),g=0,l=1;
+  for(int i=0;i<n;i++){
+   int x=s.nextInt();
+   g=gcd(g,x);
+   l=l/gcd(l,x)*x;
+  }
+  System.out.println("GCD="+g);
+  System.out.println("LCM="+l);
+ }
+}
