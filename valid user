@@ -1,0 +1,8 @@
+import java.util.*;
+class Q8 {
+ public static void main(String[] a) {
+  String u=new Scanner(System.in).next();
+  boolean ok=u.matches("[a-zA-Z0-9_]+");
+  System.out.println(ok?"Valid":"Invalid");
+ }
+}
